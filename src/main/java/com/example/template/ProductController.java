@@ -9,8 +9,8 @@ public class ProductController {
     @Autowired
     ProductService productService;
 
-    @GetMapping("/product/{productId}")
-    Product productStockCheck(@PathVariable(value = "productId") Long productId) {
+    @GetMapping("/product/{itemId}")
+    Product productStockCheck(@PathVariable(value = "itemId") Long productId) {
 
         System.out.println("productStockCheck call");
         try {
